@@ -8,9 +8,7 @@ module.exports = function createDreamTeam(members) {
     if (typeof members[i] != 'string') continue;
 
     let firstLetter = members[i].trim().split('');
-    arrShortName.push(firstLetter[0].toUpperCase())
-    console.log(firstLetter[0])
-      
+    arrShortName.push(firstLetter[0].toUpperCase())  
   }
 
   return arrShortName.sort().join('');
